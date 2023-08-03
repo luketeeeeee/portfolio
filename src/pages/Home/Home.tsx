@@ -34,7 +34,7 @@ export const Home = () => {
 	return (
 		<Container>
 			<Header />
-			<div className="mx-10 text-main-gray">
+			<div className="mx-10 text-zinc-400">
 				<div className="flex items-center pb-28 pt-20">
 					<div className="mr-9 flex w-80 justify-between">
 						<img src={profilePicture} alt="Lucas Henrique" className="rounded-full" />
@@ -42,7 +42,7 @@ export const Home = () => {
 
 					<div className="font-rubik text-[1.05rem]">
 						<p>✌ Hello, my name is</p>
-						<h1 className="pb-5 font-slab text-7xl font-bold tracking-tight text-main-white">
+						<h1 className="pb-5 font-slab text-7xl font-bold tracking-tight text-gray-200">
 							Lucas Henrique
 						</h1>
 						<p className="leading-5">
@@ -55,9 +55,8 @@ export const Home = () => {
 
 				<div>
 					<div>
-						<h1 className="font-slab text-5xl font-bold text-main-white">Projects</h1>
+						<h1 className="font-slab text-5xl font-bold text-gray-200">Projects</h1>
 						<div className="w-full">
-							{/* (<RenderProjects data={allProjects} />) */}
 							{allProjects.map((project: ProjectCardProps) => (
 								<ProjectCard
 									key={project.name}
