@@ -67,6 +67,28 @@ export const Home = () => {
 							))}
 						</div>
 					</div>
+
+					<div className="pb-20 pt-20 font-slab">
+						<h1 className="mb-7 text-5xl font-bold text-gray-200">Background</h1>
+
+						<div className="flex w-full flex-col gap-5">
+							<div className="flex w-96 flex-col justify-between">
+								<h1 className="text-xl font-bold text-gray-200">Splendore Digital</h1>
+								<div className="flex w-full justify-between">
+									<p>Web Development Intern</p>
+									<p>2023 - Present</p>
+								</div>
+							</div>
+
+							<div className="flex w-96 flex-col justify-between">
+								<h1 className="text-xl font-bold text-gray-200">PrestContas</h1>
+								<div className="flex w-full justify-between">
+									<p>Web Development Intern</p>
+									<p>2022 - 2023</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</Container>
