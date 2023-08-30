@@ -1,53 +1,14 @@
-import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Container } from "../../components/Container";
 import { Header } from "../../components/Header";
-
-type ProjectDetails = {
-	id: string;
-	title: string;
-	name: string;
-	summary: string;
-	topics: Topic[];
-	images: string[];
-	url: string;
-};
-
-type Topic = {
-	title: string;
-	text: string;
-};
+import { ProjectDetails, projects } from "../../static/projects";
 
 export const Project = () => {
 	const { projectUniqueName } = useParams();
-	const [projectDetails, setProjectDetails] = useState<ProjectDetails>();
-	// const projectTopics = projectDetails?.topics.slice(0);
 
-	useEffect(() => {
-		const fetchProjectDetails = async () => {
-			try {
-				const response = await fetch(
-					`${import.meta.env.VITE_API_URL}/projects/${projectUniqueName}`,
-					{
-						method: "GET",
-						headers: {
-							"Content-Type": "application/json",
-						},
-					}
-				);
-
-				if (response.ok) {
-					const result = await response.json();
-
-					setProjectDetails(result.data);
-				}
-			} catch (error) {
-				alert(error);
-			}
-		};
-
-		fetchProjectDetails();
-	}, [projectUniqueName]);
+	const projectDetails: ProjectDetails | undefined = projects.find(
+		(project) => project.name === projectUniqueName
+	);
 
 	return (
 		<Container>
