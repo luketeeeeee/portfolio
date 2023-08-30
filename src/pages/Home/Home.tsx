@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { projects } from "../../static/projects";
 import { Container } from "../../components/Container";
 import { Header } from "../../components/Header";
 import { ProjectCard } from "../../components/ProjectCard";
@@ -6,31 +6,6 @@ import { ProjectCardProps } from "../../components/ProjectCard/ProjectCard";
 import profilePicture from "../../static/profile.jpeg";
 
 export const Home = () => {
-	const [allProjects, setAllProjects] = useState([]);
-
-	useEffect(() => {
-		const fetchPets = async () => {
-			try {
-				const response = await fetch(`${import.meta.env.VITE_API_URL}/projects`, {
-					method: "GET",
-					headers: {
-						"Content-Type": "application/json",
-					},
-				});
-
-				if (response.ok) {
-					const result = await response.json();
-
-					setAllProjects(result.data);
-				}
-			} catch (error) {
-				alert(error);
-			}
-		};
-
-		fetchPets();
-	}, []);
-
 	return (
 		<Container>
 			<Header />
@@ -59,7 +34,7 @@ export const Home = () => {
 							Projects
 						</h1>
 						<div className="w-full">
-							{allProjects.map((project: ProjectCardProps) => (
+							{projects.map((project: ProjectCardProps) => (
 								<ProjectCard
 									key={project.name}
 									name={project.name}
