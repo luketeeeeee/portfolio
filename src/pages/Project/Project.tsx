@@ -15,16 +15,16 @@ export const Project = () => {
 			<Header />
 
 			<div className="flex w-full flex-col pb-14 pt-20 text-zinc-400">
-				<div className="w-full self-start px-20">
-					<h1 className="font-slab text-6xl font-bold text-main-white">
+				<div className="w-full self-start px-10 sm:px-20">
+					<h1 className="font-slab text-4xl font-bold text-main-white sm:text-6xl">
 						{projectDetails?.title}
 					</h1>
-					<p className="mt-5 font-rubik text-xl">{projectDetails?.summary}</p>
+					<p className="mt-5 font-rubik text-lg xs:text-xl">{projectDetails?.summary}</p>
 				</div>
 
 				<hr className="mt-10 w-11/12 self-center border-slate-800" />
 
-				<div className="mt-6 w-full px-24 font-rubik text-lg">
+				<div className="mt-6 w-full px-10 font-rubik text-lg sm:px-24">
 					{projectDetails?.topics.map((topic) => (
 						<>
 							<h1 className="mt-12 font-slab text-4xl font-bold text-main-white">
