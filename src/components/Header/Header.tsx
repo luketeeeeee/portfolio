@@ -18,6 +18,7 @@ export const Header = () => {
 			<Link
 				className="decoration-lime-500 transition duration-500 ease-in-out hover:text-zinc-200"
 				to="https://github.com/luketeeeeee"
+				target="_blank"
 			>
 				code
 			</Link>

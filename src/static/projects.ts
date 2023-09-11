@@ -3,7 +3,7 @@ export type ProjectDetails = {
 	name: string;
 	summary: string;
 	topics: Topic[];
-	images?: string[];
+	images: string[];
 	url: string;
 };
 
@@ -36,5 +36,25 @@ export const projects: ProjectDetails[] = [
 			},
 		],
 		url: "https://pet-solidario.vercel.app/",
+		images: [],
+	},
+	{
+		title: "Next Calculator",
+		name: "next-calculator",
+		summary: "A calculator developed with Next and TypeScript",
+		topics: [
+			{
+				title: "",
+				text: "The main reason for me to have used Next.js and TypeScript in this application is simply because I wanted to test both and also wanted to review the concepts of state and props in React.",
+			},
+			{
+				title: "Technologies used",
+				text: "As mentioned earlier, the main technologies used in the project were Next.js in conjunction with TypeScript, but it's also important to highlight the use of Styled Components for styling the application. It's worth noting that this was the first time I used TypeScript in an application developed entirely by myself, so I consider this application to be a significant step in my understanding of how this technology works.",
+			},
+		],
+		url: "https://github.com/luketeeeeee/calculadora-next",
+		images: [
+			"https://res.cloudinary.com/dpndt3b4p/image/upload/v1694393215/calculadora_u0bbts.png",
+		],
 	},
 ];
