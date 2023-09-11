@@ -33,6 +33,22 @@ export const Project = () => {
 							<p className="mt-6">{topic.text}</p>
 						</>
 					))}
+
+					{projectDetails && projectDetails.images.length > 0 ? (
+						<div className="flex flex-col">
+							<h1 className="mt-12 font-slab text-4xl font-bold text-main-white">
+								Some images
+							</h1>
+							<div className="flex flex-wrap">
+								{projectDetails.images.map((image) => (
+									<img className="mt-5 rounded-xl" src={image} alt="project image" />
+								))}
+							</div>
+						</div>
+					) : (
+						<></>
+					)}
+
 					<>
 						<h1 className="mt-12 font-slab text-xl font-bold text-main-white">
 							You can access the project{" "}
