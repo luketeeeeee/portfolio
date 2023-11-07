@@ -39,6 +39,14 @@ export const projects: ProjectDetails[] = [
 		images: [],
 	},
 	{
+		title: "Kanban Board",
+		name: "kanban-board",
+		summary: "",
+		topics: [],
+		url: "https://github.com/luketeeeeee/dnd-kanban-app",
+		images: [],
+	},
+	{
 		title: "Next Calculator",
 		name: "next-calculator",
 		summary: "A calculator developed with Next and TypeScript",
