@@ -16,7 +16,7 @@ export const projects: ProjectDetails[] = [
 	{
 		title: "Pet Solidário",
 		name: "pet-solidario",
-		summary: "Animal adoption app developed during the software engineering class",
+		summary: "Animal adoption app developed during the software engineering classes",
 		topics: [
 			{
 				title: "",
@@ -41,10 +41,25 @@ export const projects: ProjectDetails[] = [
 	{
 		title: "Kanban Board",
 		name: "kanban-board",
-		summary: "",
-		topics: [],
+		summary: "A Kanban board application for task management.",
+		topics: [
+			{
+				title: "",
+				text: "I developed this application to apply the technologies provided by the dnd-kit library in practice. The project is entirely built in React, using TypeScript as the base language.",
+			},
+			{
+				title: "The dnd-kit library",
+				text: "It is indeed a very interesting library, with a relatively simple implementation that can be easily integrated into any React project, and it has accessible documentation.",
+			},
+			{
+				title: "Project maintenance",
+				text: "I plan to implement new features to the project, mainly regarding data persistence, which can be done by adding a database layer to the project. Another possible feature that can be added is a user authentication system, where each user has their own unique Kanban board.",
+			},
+		],
 		url: "https://github.com/luketeeeeee/dnd-kanban-app",
-		images: [],
+		images: [
+			"https://res.cloudinary.com/dpndt3b4p/image/upload/v1706550812/b14gq1s1ewtgapk4x78c.png",
+		],
 	},
 	{
 		title: "Next Calculator",
