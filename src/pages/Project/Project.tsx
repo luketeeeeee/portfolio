@@ -53,6 +53,7 @@ export const Project = () => {
 						<h1 className="mt-12 font-slab text-xl font-bold text-main-white">
 							You can access the project{" "}
 							<Link
+								target="_blank"
 								to={`${projectDetails?.url}`}
 								className="text-lime-500 underline decoration-transparent transition duration-500 ease-in-out hover:decoration-lime-500"
 							>
