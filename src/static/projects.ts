@@ -41,7 +41,7 @@ export const projects: ProjectDetails[] = [
 	{
 		title: "Kanban Board",
 		name: "kanban-board",
-		summary: "A Kanban board application for task management.",
+		summary: "A Kanban board application for task management",
 		topics: [
 			{
 				title: "",
@@ -60,6 +60,17 @@ export const projects: ProjectDetails[] = [
 		images: [
 			"https://res.cloudinary.com/dpndt3b4p/image/upload/v1706550812/b14gq1s1ewtgapk4x78c.png",
 		],
+	},
+];
+
+export const sideProjects: ProjectDetails[] = [
+	{
+		title: "Luk Modules",
+		name: "luk-modules",
+		summary: "My CLI to create my own modules",
+		topics: [],
+		images: [],
+		url: "",
 	},
 	{
 		title: "Next Calculator",

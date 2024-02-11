@@ -1,12 +1,14 @@
 import { Link, useParams } from "react-router-dom";
 import { Container } from "../../components/Container";
 import { Header } from "../../components/Header";
-import { ProjectDetails, projects } from "../../static/projects";
+import { ProjectDetails, projects, sideProjects } from "../../static/projects";
 
 export const Project = () => {
 	const { projectUniqueName } = useParams();
 
-	const projectDetails: ProjectDetails | undefined = projects.find(
+	const allProjects = projects.concat(sideProjects);
+
+	const projectDetails: ProjectDetails | undefined = allProjects.find(
 		(project) => project.name === projectUniqueName
 	);
 

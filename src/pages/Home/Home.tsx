@@ -1,9 +1,10 @@
-import { projects } from "../../static/projects";
+import { projects, sideProjects } from "../../static/projects";
 import { Container } from "../../components/Container";
 import { Header } from "../../components/Header";
 import { ProjectCard } from "../../components/ProjectCard";
 import { ProjectCardProps } from "../../components/ProjectCard/ProjectCard";
 import profilePicture from "../../static/profile.jpeg";
+import { SideProjectCard } from "../../components/SideProjectCard";
 
 export const Home = () => {
 	return (
@@ -45,25 +46,44 @@ export const Home = () => {
 						</div>
 					</div>
 
-					<div className="pb-12 pt-20 font-slab">
-						<h1 className="mb-7 font-bold text-gray-200 rsm:text-3xl xs:text-5xl">
-							Background
-						</h1>
+					<div className="flex-col pb-12 pt-20 font-slab lg:flex lg:flex-row lg:gap-28">
+						<div className="mb-10 w-[400px] lg:mb-0">
+							<h1 className="mb-5 font-bold text-gray-200 rsm:text-3xl xs:text-5xl">
+								Side Projects
+							</h1>
 
-						<div className="flex flex-col gap-5 sm:w-96">
-							<div className="flex flex-col justify-between">
-								<h1 className="text-xl font-bold text-gray-200">Splendore Digital</h1>
-								<div className="flex w-full justify-between rsm:flex-col xs:flex-row">
-									<p>Web Development Intern</p>
-									<p>2023 - Present</p>
-								</div>
+							<div className="flex flex-col gap-3">
+								{sideProjects.map((sideProject: ProjectCardProps) => (
+									<SideProjectCard
+										key={sideProject.name}
+										name={sideProject.name}
+										title={sideProject.title}
+										summary={sideProject.summary}
+									/>
+								))}
 							</div>
+						</div>
 
-							<div className="flex flex-col justify-between sm:w-96">
-								<h1 className="text-xl font-bold text-gray-200">PrestContas</h1>
-								<div className="flex w-full justify-between rsm:flex-col xs:flex-row">
-									<p>Web Development Intern</p>
-									<p>2022 - 2023</p>
+						<div>
+							<h1 className="mb-7 font-bold text-gray-200 rsm:text-3xl xs:text-5xl">
+								Background
+							</h1>
+
+							<div className="flex flex-col gap-5 sm:w-96">
+								<div className="flex flex-col justify-between">
+									<h1 className="text-xl font-bold text-gray-200">Splendore Digital</h1>
+									<div className="flex w-full justify-between rsm:flex-col xs:flex-row">
+										<p>Web Development Intern</p>
+										<p>2023 - Present</p>
+									</div>
+								</div>
+
+								<div className="flex flex-col justify-between sm:w-96">
+									<h1 className="text-xl font-bold text-gray-200">PrestContas</h1>
+									<div className="flex w-full justify-between rsm:flex-col xs:flex-row">
+										<p>Web Development Intern</p>
+										<p>2022 - 2023</p>
+									</div>
 								</div>
 							</div>
 						</div>
