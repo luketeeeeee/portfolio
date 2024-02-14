@@ -52,7 +52,7 @@ export const Home = () => {
 								Side Projects
 							</h1>
 
-							<div className="flex flex-col gap-3">
+							<div className="flex flex-col gap-4">
 								{sideProjects.map((sideProject: ProjectCardProps) => (
 									<SideProjectCard
 										key={sideProject.name}
