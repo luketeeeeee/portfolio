@@ -41,7 +41,7 @@ export const projects: ProjectDetails[] = [
 	{
 		title: "Kanban Board",
 		name: "kanban-board",
-		summary: "A Kanban board application for task management.",
+		summary: "A Kanban board application for task management",
 		topics: [
 			{
 				title: "",
@@ -60,6 +60,46 @@ export const projects: ProjectDetails[] = [
 		images: [
 			"https://res.cloudinary.com/dpndt3b4p/image/upload/v1706550812/b14gq1s1ewtgapk4x78c.png",
 		],
+	},
+];
+
+export const sideProjects: ProjectDetails[] = [
+	{
+		title: "Luk Modules",
+		name: "luk-modules",
+		summary: "My CLI to create my own modules",
+		topics: [
+			{
+				title: "",
+				text: "The main reason for creating this npm package comes from the way I try to modularize my web applications, both on the front-end and the back-end. While developing these applications, I noticed that I was spending time creating folder and file structures for these modules manually. So, I thought, 'Why not do this automatically?' That's when I created the luk-modules package.",
+			},
+			{
+				title: "",
+				text: "Alright, perhaps it's not a fully automatic process since it involves running a CLI with the command 'npx luk-modules' and answering some questions about the project being developed. However, it does save some time in creating these modules.",
+			},
+			{
+				title: "The sequence of questions",
+				text: "1. What type of project are you currently developing? (This question has two alternatives, front-end or back-end. Depending on the answer, the module's structure may vary, as can be seen in the 'Module Structure' section.)",
+			},
+			{
+				title: "",
+				text: "2. Are you using TypeScript? (2. Are you currently using TypeScript? (As you might guess, this question also has two alternatives, yes or no, and it will determine the extension with which the module or component files will be created, whether they will be .js or .ts))",
+			},
+			{
+				title: "",
+				text: "3. Type the name of the module. (Here, the user will write the name of the module or component they are creating.)",
+			},
+			{
+				title: "",
+				text: "4. Type the route to create the module. (The user should inform the directory route within the project where the module or component should be created.)",
+			},
+			// {
+			//   title: "The module or component folder structure",
+			//   text: ""
+			// }
+		],
+		images: [],
+		url: "",
 	},
 	{
 		title: "Next Calculator",
