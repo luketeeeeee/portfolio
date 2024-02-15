@@ -74,7 +74,7 @@ export const Home = () => {
 									<h1 className="text-xl font-bold text-gray-200">Splendore Digital</h1>
 									<div className="flex w-full justify-between rsm:flex-col xs:flex-row">
 										<p>Web Development Intern</p>
-										<p>2023 - Present</p>
+										<p>2023 - 2024</p>
 									</div>
 								</div>
 
