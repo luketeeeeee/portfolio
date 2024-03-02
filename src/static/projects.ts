@@ -35,7 +35,7 @@ export const projects: ProjectDetails[] = [
 				text: "Ruty Silva (designer and engineer), Maria Cristiane (designer and engineer) and Cassio Urtiga (designer and engineer)",
 			},
 		],
-		url: "https://pet-solidario.vercel.app/",
+		url: "https://github.com/luketeeeeee/pet-solidario",
 		images: [],
 	},
 	{
