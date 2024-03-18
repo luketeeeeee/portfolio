@@ -14,57 +14,6 @@ type Topic = {
 
 export const projects: ProjectDetails[] = [
 	{
-		title: "Pet Solidário",
-		name: "pet-solidario",
-		summary: "Animal adoption app developed during the software engineering classes",
-		topics: [
-			{
-				title: "",
-				text: "As a software engineer on the project, I was responsible for selecting the technologies used in the project, as well as making decisions about the overall planning, assisting, and teaching other team members about the usage of the chosen technologies.",
-			},
-			{
-				title: "Choosing the technologies",
-				text: "The main technologies used in the development of this project were: React for the frontend (used in conjunction with TailwindCSS), Express for creating and structuring the API, and MongoDB as the database. The main reason for choosing these technologies was the team's prior familiarity.",
-			},
-			{
-				title: "Project maintenance",
-				text: "Regarding project maintenance, the initial plan is to make the code as clean as possible. The main projection for this stage is to add typing by changing the code to TypeScript (both on the frontend and backend). Another modification is related to the project's graphical interfaces, as the current screens were not designed with the purpose of being responsive. Therefore, the focus of this modification will be on adding responsiveness and fluidity to the application.",
-			},
-			{
-				title: "Collaborators",
-				text: "Ruty Silva (designer and engineer), Maria Cristiane (designer and engineer) and Cassio Urtiga (designer and engineer)",
-			},
-		],
-		url: "https://github.com/luketeeeeee/pet-solidario",
-		images: [],
-	},
-	{
-		title: "Kanban Board",
-		name: "kanban-board",
-		summary: "A Kanban board application for task management",
-		topics: [
-			{
-				title: "",
-				text: "I developed this application to apply the technologies provided by the dnd-kit library in practice. The project is entirely built in React, using TypeScript as the base language.",
-			},
-			{
-				title: "The dnd-kit library",
-				text: "It is indeed a very interesting library, with a relatively simple implementation that can be easily integrated into any React project, and it has accessible documentation.",
-			},
-			{
-				title: "Project maintenance",
-				text: "I plan to implement new features to the project, mainly regarding data persistence, which can be done by adding a database layer to the project. Another possible feature that can be added is a user authentication system, where each user has their own unique Kanban board.",
-			},
-		],
-		url: "https://github.com/luketeeeeee/dnd-kanban-app",
-		images: [
-			"https://res.cloudinary.com/dpndt3b4p/image/upload/v1706550812/b14gq1s1ewtgapk4x78c.png",
-		],
-	},
-];
-
-export const sideProjects: ProjectDetails[] = [
-	{
 		title: "Luk Modules",
 		name: "luk-modules",
 		summary: "My CLI to create my own modules",
@@ -93,13 +42,46 @@ export const sideProjects: ProjectDetails[] = [
 				title: "",
 				text: "4. Type the route to create the module. (The user should inform the directory route within the project where the module or component should be created.)",
 			},
-			// {
-			//   title: "The module or component folder structure",
-			//   text: ""
-			// }
+			{
+				title: "The module or component folder structure",
+				text: "After the questions, a boiler plate component/module structure will be created on the informed route. You can check an example of the final results below.",
+			},
 		],
-		images: [],
+		images: [
+			"https://res.cloudinary.com/dpndt3b4p/image/upload/v1709923946/vekztrrf5htrcprqtdxo.png",
+			"https://res.cloudinary.com/dpndt3b4p/image/upload/v1709923946/z01ay4kow2fpgp9rcmyl.png",
+			"https://res.cloudinary.com/dpndt3b4p/image/upload/v1709923946/scutwx2un2b1wogqavuz.png",
+			"https://res.cloudinary.com/dpndt3b4p/image/upload/v1709923946/nrovvngbuzmcu02x1y0s.png",
+		],
 		url: "",
+	},
+];
+
+export const sideProjects: ProjectDetails[] = [
+	{
+		title: "Pet Solidário",
+		name: "pet-solidario",
+		summary: "Animal adoption app developed during the software engineering classes",
+		topics: [
+			{
+				title: "",
+				text: "As a software engineer on the project, I was responsible for selecting the technologies used in the project, as well as making decisions about the overall planning, assisting, and teaching other team members about the usage of the chosen technologies.",
+			},
+			{
+				title: "Choosing the technologies",
+				text: "The main technologies used in the development of this project were: React for the frontend (used in conjunction with TailwindCSS), Express for creating and structuring the API, and MongoDB as the database. The main reason for choosing these technologies was the team's prior familiarity.",
+			},
+			{
+				title: "Project maintenance",
+				text: "Regarding project maintenance, the initial plan is to make the code as clean as possible. The main projection for this stage is to add typing by changing the code to TypeScript (both on the frontend and backend). Another modification is related to the project's graphical interfaces, as the current screens were not designed with the purpose of being responsive. Therefore, the focus of this modification will be on adding responsiveness and fluidity to the application.",
+			},
+			{
+				title: "Collaborators",
+				text: "Ruty Silva (designer and engineer), Maria Cristiane (designer and engineer) and Cassio Urtiga (designer and engineer)",
+			},
+		],
+		url: "https://github.com/luketeeeeee/pet-solidario",
+		images: [],
 	},
 	{
 		title: "Next Calculator",
@@ -118,6 +100,29 @@ export const sideProjects: ProjectDetails[] = [
 		url: "https://github.com/luketeeeeee/calculadora-next",
 		images: [
 			"https://res.cloudinary.com/dpndt3b4p/image/upload/v1694393215/calculadora_u0bbts.png",
+		],
+	},
+	{
+		title: "Kanban Board",
+		name: "kanban-board",
+		summary: "A Kanban board application for task management",
+		topics: [
+			{
+				title: "",
+				text: "I developed this application to apply the technologies provided by the dnd-kit library in practice. The project is entirely built in React, using TypeScript as the base language.",
+			},
+			{
+				title: "The dnd-kit library",
+				text: "It is indeed a very interesting library, with a relatively simple implementation that can be easily integrated into any React project, and it has accessible documentation.",
+			},
+			{
+				title: "Project maintenance",
+				text: "I plan to implement new features to the project, mainly regarding data persistence, which can be done by adding a database layer to the project. Another possible feature that can be added is a user authentication system, where each user has their own unique Kanban board.",
+			},
+		],
+		url: "https://github.com/luketeeeeee/dnd-kanban-app",
+		images: [
+			"https://res.cloudinary.com/dpndt3b4p/image/upload/v1706550812/b14gq1s1ewtgapk4x78c.png",
 		],
 	},
 ];
