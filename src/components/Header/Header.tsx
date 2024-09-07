@@ -4,16 +4,23 @@ export const Header = () => {
 	return (
 		<header className="flex h-12 w-full items-center justify-center gap-4 pt-5 font-rubik text-zinc-400 underline decoration-2 sm:justify-end">
 			<Link
-				className="decoration-pink-300 transition duration-500 ease-in-out hover:text-zinc-200"
+				className="decoration-teal-300 transition duration-500 ease-in-out hover:text-zinc-200"
 				to="/"
 			>
-				Home
+				work
 			</Link>
 			<Link
-				className="decoration-rose-500 transition duration-500 ease-in-out hover:text-zinc-200"
+				className="decoration-violet-500 transition duration-500 ease-in-out hover:text-zinc-200"
 				to="/resume"
 			>
-				Currículo
+				resume
+			</Link>
+			<Link
+				className="decoration-lime-500 transition duration-500 ease-in-out hover:text-zinc-200"
+				to="https://github.com/luketeeeeee"
+				target="_blank"
+			>
+				code
 			</Link>
 		</header>
 	);

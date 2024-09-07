@@ -1,12 +1,12 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Container } from "../../components/Container";
 import { Header } from "../../components/Header";
-import { ProjectDetails, projects } from "../../static/projects";
+import { ProjectDetails, projects, sideProjects } from "../../static/projects";
 
 export const Project = () => {
 	const { projectUniqueName } = useParams();
 
-	const allProjects = projects;
+	const allProjects = projects.concat(sideProjects);
 
 	const projectDetails: ProjectDetails | undefined = allProjects.find(
 		(project) => project.name === projectUniqueName
@@ -29,10 +29,10 @@ export const Project = () => {
 				<div className="mt-6 w-full px-10 font-rubik text-lg sm:px-24">
 					{projectDetails?.topics.map((topic) => (
 						<>
-							<h1 className="mt-4 font-slab text-4xl font-bold text-main-white">
+							<h1 className="mt-12 font-slab text-4xl font-bold text-main-white">
 								{topic.title}
 							</h1>
-							<p className="mt-6 text-main-white">{topic.text}</p>
+							<p className="mt-6">{topic.text}</p>
 						</>
 					))}
 
@@ -50,6 +50,19 @@ export const Project = () => {
 					) : (
 						<></>
 					)}
+
+					<>
+						<h1 className="mt-12 font-slab text-xl font-bold text-main-white">
+							You can access the project{" "}
+							<Link
+								target="_blank"
+								to={`${projectDetails?.url}`}
+								className="text-lime-500 underline decoration-transparent transition duration-500 ease-in-out hover:decoration-lime-500"
+							>
+								here
+							</Link>
+						</h1>
+					</>
 				</div>
 			</div>
 		</Container>
