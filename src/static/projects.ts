@@ -13,17 +13,17 @@ type Topic = {
 };
 
 export const projects: ProjectDetails[] = [
-	{
-		title: "F1 API",
-		name: "f1-api",
-		summary: "",
-		topics: [
-			{
-				title: "",
-				text: ""
-			}
-		]
-	},
+	// {
+	// 	title: "F1 API",
+	// 	name: "f1-api",
+	// 	summary: "",
+	// 	topics: [
+	// 		{
+	// 			title: "",
+	// 			text: ""
+	// 		}
+	// 	]
+	// },
 	{
 		title: "Luk Modules",
 		name: "luk-modules",
