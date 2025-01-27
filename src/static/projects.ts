@@ -25,6 +25,23 @@ export const projects: ProjectDetails[] = [
 	// 	]
 	// },
 	{
+		title: "F1 API",
+		name: "f1-api",
+		summary: "An API containing some data about Formula 1",
+		topics: [
+			{
+				title: "",
+				text: "",
+			},
+			{
+				title: "",
+				text: "",
+			},
+		],
+		images: [],
+		url: "https://f1api.vercel.app",
+	},
+	{
 		title: "Luk Modules",
 		name: "luk-modules",
 		summary: "My CLI to create my own modules",
@@ -47,7 +64,7 @@ export const projects: ProjectDetails[] = [
 			},
 			{
 				title: "",
-				text: "3. Type the name of the module. (Here, the user will write the name of the module or component they are creating.)",
+				text: "3. Type the name of the module (here, the user will write the name of the module or component they are creating).",
 			},
 			{
 				title: "",
@@ -89,6 +106,10 @@ export const sideProjects: ProjectDetails[] = [
 			{
 				title: "Collaborators",
 				text: "Ruty Silva (designer and engineer), Maria Cristiane (designer and engineer) and Cassio Urtiga (designer and engineer)",
+			},
+			{
+				title: "Current State",
+				text: "The project is not online anymore, i'm currently working on an update to add responsivity and switch to TypeScript.",
 			},
 		],
 		url: "https://github.com/luketeeeeee/pet-solidario",
