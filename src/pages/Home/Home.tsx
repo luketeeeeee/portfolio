@@ -1,12 +1,27 @@
 import { Link } from "react-router-dom";
-import { projects } from "../../static/projects";
+// import { projects } from "../../static/projects";
 import { Container } from "../../components/Container";
 import { Header } from "../../components/Header";
 import { ProjectCard } from "../../components/ProjectCard";
 import { ProjectCardProps } from "../../components/ProjectCard/ProjectCard";
 import profilePicture from "../../static/profile.jpeg";
+import projectsJson from "../../static/projects.json";
+
+type Project = {
+	title: string;
+	status: string;
+	uname: string;
+	summary: string;
+	stack: string;
+	details: string;
+	url: string;
+	code: string;
+	images: string[];
+};
 
 export const Home = () => {
+	const projects: Project[] = projectsJson;
+
 	return (
 		<Container>
 			<Header />
@@ -33,10 +48,12 @@ export const Home = () => {
 						<div className="mt-[-10px] flex w-full flex-col gap-0 lg:grid lg:grid-cols-2 lg:gap-4">
 							{projects.map((project: ProjectCardProps) => (
 								<ProjectCard
-									key={project.name}
-									name={project.name}
+									key={project.uname}
+									uname={project.uname}
 									title={project.title}
 									summary={project.summary}
+									status={project.status}
+									stack={project.stack}
 								/>
 							))}
 						</div>
@@ -101,34 +118,34 @@ export const Home = () => {
 						other stuff that i made: [
 						<Link
 							to="https://github.com/luketeeeeee/luk-modules"
-							className="text-blue-400 hover:underline hover:decoration-blue-400"
+							className="text-green-500 hover:underline hover:decoration-green-500"
 						>
 							luk modules
 						</Link>
 						,{" "}
 						<Link
 							to="https://github.com/luketeeeeee/pet-solidario"
-							className="text-yellow-400 hover:underline hover:decoration-yellow-400"
+							className="text-green-500 hover:underline hover:decoration-green-500"
 						>
 							pet solidario
 						</Link>
 						,{" "}
 						<Link
 							to="https://github.com/luketeeeeee/kanban-board"
-							className="text-green-400 hover:underline hover:decoration-green-400"
+							className="text-green-500 hover:underline hover:decoration-green-500"
 						>
 							kanban board
 						</Link>
 						,{" "}
 						<Link
 							to="https://github.com/luketeeeeee/advent-of-code-2024"
-							className="text-red-400 hover:underline hover:decoration-red-400"
+							className="text-green-500 hover:underline hover:decoration-green-500"
 						>
 							advent of code (2024)
 						</Link>
 						]
 					</p>
-					<p>(this ones are just for study/)</p>
+					<p>(this ones are just for study/exploring technologies purpose)</p>
 				</div>
 			</div>
 		</Container>
