@@ -13,21 +13,10 @@ type Topic = {
 };
 
 export const projects: ProjectDetails[] = [
-	// {
-	// 	title: "F1 API",
-	// 	name: "f1-api",
-	// 	summary: "",
-	// 	topics: [
-	// 		{
-	// 			title: "",
-	// 			text: ""
-	// 		}
-	// 	]
-	// },
 	{
 		title: "F1 API",
 		name: "f1-api",
-		summary: "An API containing some data about Formula 1",
+		summary: "An API containing historic data about Formula 1",
 		topics: [
 			{
 				title: "",
@@ -81,7 +70,7 @@ export const projects: ProjectDetails[] = [
 			"https://res.cloudinary.com/dpndt3b4p/image/upload/v1709923946/scutwx2un2b1wogqavuz.png",
 			"https://res.cloudinary.com/dpndt3b4p/image/upload/v1709923946/nrovvngbuzmcu02x1y0s.png",
 		],
-		url: "",
+		url: "https://github.com/luketeeeeee/luk-modules",
 	},
 ];
 

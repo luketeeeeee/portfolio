@@ -6,21 +6,25 @@ export const Resume = () => {
 	const [selectedLanguage, setSelectedLanguage] = useState("enUS");
 
 	return (
-		<div className="flex h-full w-full flex-col items-center">
+		<div className="flex h-full w-full flex-col items-center font-rubik">
 			<div className="flex items-center gap-3 px-10 py-2">
 				<p>Select the CV language: </p>
 				<button
 					onClick={() => setSelectedLanguage("enUS")}
-					className={`w-40 rounded py-1 transition duration-300 hover:bg-slate-700 ${
-						selectedLanguage === "enUS" ? "bg-blue-500 hover:bg-blue-600" : "bg-slate-800"
+					className={`w-40 rounded py-1 transition duration-300 ${
+						selectedLanguage === "enUS"
+							? "bg-blue-500 hover:bg-blue-600"
+							: "bg-slate-800 hover:bg-slate-700"
 					}`}
 				>
 					English
 				</button>
 				<button
 					onClick={() => setSelectedLanguage("ptBR")}
-					className={`w-40 rounded  py-1 transition duration-300 hover:bg-slate-700 ${
-						selectedLanguage === "ptBR" ? "bg-blue-500 hover:bg-blue-600" : "bg-slate-800"
+					className={`w-40 rounded  py-1 transition duration-300 ${
+						selectedLanguage === "ptBR"
+							? "bg-blue-500 hover:bg-blue-600"
+							: "bg-slate-800 hover:bg-slate-700"
 					}`}
 				>
 					Portuguese

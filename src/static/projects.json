@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Weekend Projects",
+		"status": "ongoing",
+		"uname": "weekend-projects",
+		"summary": "A website where computer science students can share their ideas with the university community",
+		"topics": [
+			{
+				"title": "",
+				"text": ""
+			}
+		],
+		"url": "https://github.com/luketeeeeee/wknd-projects-front",
+		"code": "https://github.com/luketeeeeee/wknd-projects-front",
+		"images": []
+	},
+	{
+		"title": "F1 API",
+		"status": "ongoing",
+		"uname": "f1-api",
+		"summary": "An API containing historic data about Formula 1",
+		"topics": [
+			{
+				"title": "",
+				"text": ""
+			}
+		],
+		"url": "https://github.com/luketeeeeee/f1-api",
+		"code": "https://github.com/luketeeeeee/f1-api",
+		"images": []
+	}
+]
