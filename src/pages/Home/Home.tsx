@@ -1,23 +1,12 @@
 import { Link } from "react-router-dom";
-// import { projects } from "../../static/projects";
+import { Project } from "../../static/projects";
+// TODO: export this components from the same file
 import { Container } from "../../components/Container";
 import { Header } from "../../components/Header";
 import { ProjectCard } from "../../components/ProjectCard";
 import { ProjectCardProps } from "../../components/ProjectCard/ProjectCard";
 import profilePicture from "../../static/profile.jpeg";
 import projectsJson from "../../static/projects.json";
-
-type Project = {
-	title: string;
-	status: string;
-	uname: string;
-	summary: string;
-	stack: string;
-	details: string;
-	url: string;
-	code: string;
-	images: string[];
-};
 
 export const Home = () => {
 	const projects: Project[] = projectsJson;
