@@ -4,7 +4,7 @@
 		"status": "development",
 		"uname": "weekend-projects",
 		"summary": "A website where students can share their ideas with the university community",
-		"stack": "TypeScript, React",
+		"stack": "React, TypeScrip, TailwindCSS",
 		"details": "This project came from my desire to showcase my project ideas to the academic environment I was part of during my studies. I noticed that, in addition to the university's own projects, many other students like me also had interesting ideas that could be presented to the university in a more direct way, going beyond the activities proposed in the classroom.",
 		"url": "https://github.com/luketeeeeee/wknd-projects-front",
 		"code": "https://github.com/luketeeeeee/wknd-projects-front",

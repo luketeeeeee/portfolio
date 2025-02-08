@@ -11,6 +11,8 @@ export const ProjectPage = () => {
 		.map((p) => ({ ...p, status: p.status as ProjectStatus }))
 		.find((project) => project.uname === projectUniqueName);
 
+	const colors = ["bg-blue-500", "bg-orange-500", "bg-green-500", "bg-violet-500"];
+
 	console.log(project);
 
 	return (
@@ -36,6 +38,21 @@ export const ProjectPage = () => {
 						>
 							{project?.status}
 						</span>
+					</p>
+
+					<p className="pt-3">
+						stack: [
+						{project?.stack?.split(", ").map((tech, index) => (
+							<span
+								key={tech}
+								className={`${
+									colors[index % colors.length]
+								} mx-1 rounded-md px-2 py-1 text-white`}
+							>
+								{tech}
+							</span>
+						))}
+						]
 					</p>
 				</div>
 
