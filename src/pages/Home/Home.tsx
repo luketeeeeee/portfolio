@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Project } from "../../static/projects";
+import { Project, ProjectStatus } from "../../static/projects";
 // TODO: export this components from the same file
 import { Container } from "../../components/Container";
 import { Header } from "../../components/Header";
@@ -9,7 +9,10 @@ import profilePicture from "../../static/profile.jpeg";
 import projectsJson from "../../static/projects.json";
 
 export const Home = () => {
-	const projects: Project[] = projectsJson;
+	const projects: Project[] = projectsJson.map((project) => ({
+		...project,
+		status: project.status as ProjectStatus,
+	}));
 
 	return (
 		<Container>
