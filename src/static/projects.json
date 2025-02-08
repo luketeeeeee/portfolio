@@ -1,0 +1,24 @@
+[
+	{
+		"title": "Weekend Projects",
+		"status": "development",
+		"uname": "weekend-projects",
+		"summary": "A website where students can share their ideas with the university community",
+		"stack": "React, TypeScrip, TailwindCSS",
+		"details": "This project came from my desire to showcase my project ideas to the academic environment I was part of during my studies. I noticed that, in addition to the university's own projects, many other students like me also had interesting ideas that could be presented to the university in a more direct way, going beyond the activities proposed in the classroom.",
+		"url": "https://github.com/luketeeeeee/wknd-projects-front",
+		"code": "https://github.com/luketeeeeee/wknd-projects-front",
+		"images": []
+	},
+	{
+		"title": "F1 API",
+		"status": "development",
+		"uname": "f1-api",
+		"summary": "An API containing historic data about Formula 1",
+		"stack": "TypeScript, Prisma, PostgreSQL, Docker",
+		"details": "I came up with the idea for this API because I like Formula 1 and wanted to build something related to the theme. I found it interesting to gather historical data in an API so that another application could consume this information, which is still being added. Currently, the application is in production, but there is no database connected (the previous one was shut down). I believe this will be the next problem to solve in order to continue the project.",
+		"url": "https://github.com/luketeeeeee/f1-api",
+		"code": "https://github.com/luketeeeeee/f1-api",
+		"images": []
+	}
+]

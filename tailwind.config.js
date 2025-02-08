@@ -11,6 +11,7 @@ export const theme = {
 		fontFamily: {
 			rubik: ["Rubik", "sans-serif"],
 			slab: ["Roboto Slab", "sans-serif"],
+			code: ["Fira Code", "sans-serif"],
 		},
 		colors: {
 			"main-blue": "#63D7DB",
