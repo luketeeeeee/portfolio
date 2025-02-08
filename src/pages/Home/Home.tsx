@@ -48,23 +48,24 @@ export const Home = () => {
 						</div>
 					</div>
 
-					<div className="flex-col pb-12 pt-20 lg:flex lg:flex-row lg:gap-24">
-						<div className="mb-10 w-[400px] lg:mb-0">
-							<h1 className="mb-5 text-center font-bold text-gray-200 rsm:text-left rsm:text-2xl xs:text-3xl">
+					<div className="flex flex-col pb-12 pt-20 lg:flex lg:flex-row lg:gap-24">
+						<div className="mb-10 flex flex-col self-center sm:w-[420px] sm:items-start sm:self-start lg:mb-0">
+							<h1 className="mb-5 text-center font-bold text-gray-200 rsm:text-2xl xs:text-3xl sm:text-left">
 								goals for this year
 							</h1>
 
 							<div className="text-md flex flex-col gap-4">
 								<p className="flex items-start">
-									<input type="checkbox" disabled className="mr-2 h-5 w-5" /> get a job
+									<input type="checkbox" disabled className="mr-2 h-5 w-5" />{" "}
+									<p>get a job</p>{" "}
 								</p>
 								<p className="flex items-start">
-									<input type="checkbox" disabled className="mr-2 h-5 w-5" /> build and
-									maintain at least two projects
+									<input type="checkbox" disabled className="mr-2 h-5 w-5" />{" "}
+									<p>build and maintain at least two projects</p>{" "}
 								</p>
 								<p className="flex items-start">
-									<input type="checkbox" disabled className="mr-2 h-5 w-5" /> learn a new
-									programming language
+									<input type="checkbox" disabled className="mr-2 h-5 w-5" />{" "}
+									<p>learn a new programming language</p>{" "}
 								</p>
 							</div>
 						</div>
@@ -135,6 +136,20 @@ export const Home = () => {
 						]
 					</p>
 					<p>(this ones are just for study/exploring technologies purpose)</p>
+					<p className="mt-4 text-center text-gray-700">
+						contact:{" "}
+						<span className="text-violet-500 hover:cursor-copy hover:underline hover:decoration-violet-500">
+							henrique.lucas521@gmail.com
+						</span>{" "}
+						|{" "}
+						<Link
+							to="https://www.linkedin.com/in/lhenrique-oliveira/"
+							className="text-blue-500 hover:underline hover:decoration-blue-500"
+							target="_blank"
+						>
+							linkedin
+						</Link>
+					</p>
 				</div>
 			</div>
 		</Container>

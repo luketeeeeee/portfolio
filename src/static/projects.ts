@@ -1,6 +1,11 @@
+export enum ProjectStatus {
+	Dev = "development",
+	Prod = "production",
+}
+
 export type Project = {
 	title: string;
-	status: string;
+	status: ProjectStatus;
 	uname: string;
 	summary: string;
 	stack: string;

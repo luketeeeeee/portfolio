@@ -2,25 +2,41 @@ import { Link, useParams } from "react-router-dom";
 import { Container } from "../../components/Container";
 import { Header } from "../../components/Header";
 import projects from "../../static/projects.json";
-import { Project } from "../../static/projects.ts";
+import { Project, ProjectStatus } from "../../static/projects.ts";
 
 export const ProjectPage = () => {
 	const { projectUniqueName } = useParams();
 
-	const project: Project | undefined = projects.find(
-		(project) => project.uname === projectUniqueName
-	);
+	const project: Project | undefined = projects
+		.map((p) => ({ ...p, status: p.status as ProjectStatus }))
+		.find((project) => project.uname === projectUniqueName);
+
+	console.log(project);
 
 	return (
 		<Container>
 			<Header />
 
 			<div className="flex w-full flex-col pb-14 pt-20 font-code text-zinc-400">
-				<div className="w-full self-start px-10 sm:px-20">
+				<div className="flex w-full flex-col self-start px-10 sm:px-20">
 					<h1 className="text-center text-2xl font-bold text-gray-300 sm:text-4xl">
 						{project?.title}
 					</h1>
-					<p className="mt-5 text-center text-lg">{project?.summary}</p>
+					<p className="mt-5 max-w-[600px] self-center text-center text-lg">
+						{project?.summary}
+					</p>
+					<p className="mt-4 text-left">
+						status:{" "}
+						<span
+							className={`${
+								project?.status === "development"
+									? "rounded bg-yellow-500 px-2 py-1 text-black"
+									: ""
+							}`}
+						>
+							{project?.status}
+						</span>
+					</p>
 				</div>
 
 				<hr className="mt-10 w-11/12 self-center border-slate-800" />
@@ -41,7 +57,7 @@ export const ProjectPage = () => {
 						<></>
 					)}
 
-					<div className="mt-12">
+					<div className="mt-12 flex flex-col">
 						<Link
 							target="_blank"
 							to={`${project?.code}`}
@@ -51,12 +67,14 @@ export const ProjectPage = () => {
 						</Link>
 
 						{project?.url ? (
-							<h1 className="text-xl font-bold text-gray-300">nothing yet</h1>
-						) : (
 							<Link
 								className="text-xl font-bold text-green-500 underline decoration-transparent transition duration-500 ease-in-out hover:decoration-green-500"
 								to={`${project?.url}`}
-							></Link>
+							>
+								project
+							</Link>
+						) : (
+							<h1 className="text-xl font-bold text-gray-300">nothing yet</h1>
 						)}
 					</div>
 				</div>
