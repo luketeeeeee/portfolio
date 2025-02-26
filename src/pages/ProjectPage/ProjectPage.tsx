@@ -40,14 +40,14 @@ export const ProjectPage = () => {
 						</span>
 					</p>
 
-					<p className="pt-3">
+					<p className="flex flex-wrap items-center gap-2 pt-3">
 						stack: [
 						{project?.stack?.split(", ").map((tech, index) => (
 							<span
 								key={tech}
 								className={`${
 									colors[index % colors.length]
-								} mx-1 rounded-md px-2 py-1 text-white`}
+								} rounded-md px-2 py-1 text-white`}
 							>
 								{tech}
 							</span>
