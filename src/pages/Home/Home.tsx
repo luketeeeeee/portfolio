@@ -37,7 +37,7 @@ export const Home = () => {
 						<h1 className="mb-7 text-center font-bold text-gray-200 rsm:text-2xl xs:text-3xl sm:text-left">
 							projects
 						</h1>
-						<div className="mt-[-10px] flex w-full flex-col gap-0 lg:grid lg:grid-cols-2 lg:gap-4">
+						<div className="mt-[-10px] flex w-full flex-col gap-4 lg:grid lg:grid-cols-2 lg:gap-4">
 							{projects.map((project: ProjectCardProps) => (
 								<ProjectCard
 									key={project.uname}
