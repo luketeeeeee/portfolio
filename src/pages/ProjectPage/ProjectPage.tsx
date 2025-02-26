@@ -33,7 +33,7 @@ export const ProjectPage = () => {
 							className={`${
 								project?.status === "development"
 									? "rounded bg-yellow-500 px-2 py-1 text-black"
-									: ""
+									: "rounded bg-green-500 px-2 py-1 text-black"
 							}`}
 						>
 							{project?.status}
@@ -61,20 +61,7 @@ export const ProjectPage = () => {
 				<div className="mt-6 flex w-full flex-col px-10 text-lg sm:px-24">
 					{project?.details}
 
-					{project && project.images.length > 0 ? (
-						<div className="flex flex-col">
-							<h1 className="mt-12 text-2xl font-bold text-gray-300">Some images</h1>
-							<div className="flex flex-wrap gap-4">
-								{project.images.map((image) => (
-									<img className="mt-3 rounded-xl" src={image} alt="project image" />
-								))}
-							</div>
-						</div>
-					) : (
-						<></>
-					)}
-
-					<div className="mt-12 flex flex-col">
+					<div className="mt-8 flex gap-8">
 						<Link
 							target="_blank"
 							to={`${project?.code}`}
@@ -94,6 +81,20 @@ export const ProjectPage = () => {
 							<h1 className="text-xl font-bold text-gray-300">nothing yet</h1>
 						)}
 					</div>
+
+					{/*TODO: click the image -> zoom in*/}
+					{project && project.images.length > 0 ? (
+						<div className="flex flex-col">
+							<h1 className="mt-12 text-2xl font-bold text-gray-300">Some images</h1>
+							<div className="flex flex-wrap gap-4">
+								{project.images.map((image) => (
+									<img className="mt-3 rounded-xl" src={image} alt="project image" />
+								))}
+							</div>
+						</div>
+					) : (
+						<></>
+					)}
 				</div>
 			</div>
 		</Container>
