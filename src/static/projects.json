@@ -25,9 +25,9 @@
 		"title": "Nutritionist LP",
 		"status": "production",
 		"uname": "nutri-lp",
-		"summary": "An API containing historic data about Formula 1",
-		"stack": "TypeScript, Next.js, TailwindCSS, Vercel",
-		"details": "I came up with the idea for this API because I like Formula 1 and wanted to build something related to the theme. I found it interesting to gather historical data in an API so that another application could consume this information, which is still being added. Currently, the application is in production, but there is no database connected (the previous one was shut down). I believe this will be the next problem to solve in order to continue the project.",
+		"summary": "A landing page for a nutritionist.",
+		"stack": "TypeScript, TailwindCSS, Vercel",
+		"details": "This is the landing page of nutritionist Bianca Frade, it was created using React and TailwindCSS. The color palette was chosen by the nutritionist, the landing page has a carousel with the main videos from Bianca Frade's Instagram.",
 		"url": "https://nutribiancafrade.vercel.app",
 		"code": "https://github.com/luketeeeeee/nutri-lp",
 		"images": [

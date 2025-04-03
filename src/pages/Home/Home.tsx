@@ -59,7 +59,7 @@ export const Home = () => {
 
 							<div className="text-md flex flex-col gap-4">
 								<p className="flex items-start">
-									<input type="checkbox" disabled className="mr-2 h-5 w-5" />{" "}
+									<input type="checkbox" checked disabled className="mr-2 h-5 w-5" />{" "}
 									<p>get a job</p>{" "}
 								</p>
 								<p className="flex items-start">
@@ -82,6 +82,14 @@ export const Home = () => {
 							</h1>
 
 							<div className="flex flex-col gap-3 sm:w-96">
+								<div className="flex flex-col justify-between">
+									<h1 className="text-lg font-bold text-gray-200">UEPB</h1>
+									<div className="flex w-full justify-between rsm:flex-col xs:flex-row">
+										<p>Software Engineering Teacher</p>
+										<p>2024</p>
+									</div>
+								</div>
+
 								<div className="flex flex-col justify-between">
 									<h1 className="text-lg font-bold text-gray-200">Telcomanager</h1>
 									<div className="flex w-full justify-between rsm:flex-col xs:flex-row">
